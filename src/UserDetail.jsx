@@ -1,3 +1,4 @@
+
 import {useFirebase} from './Firebase';
 
 export default function UserDetail(){
@@ -6,7 +7,7 @@ export default function UserDetail(){
   const {getAllUser} =firebase;
  
   return(
-    <><div className="p-5 d-flex flex-column gap-3">
+    <><div className="p-5 d-flex table_main flex-column gap-3" style={{overflowX:"scroll",scrollbarWidth:'none',cursor:"pointer"}}>
       <div className="d-flex justify-content-between align-item-center">
       <h4>All User</h4>
         
