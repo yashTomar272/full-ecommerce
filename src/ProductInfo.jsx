@@ -10,7 +10,7 @@ import { getDocs, collection, doc, getDoc } from "firebase/firestore";
 
 export default function ProductInfo() {
   const firebase = useFirebase();
-  const { addToCart, removeFromCart,user, database } = firebase;
+  const { addToCart, removeFromCart,  user, database } = firebase;
 
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,9 +60,9 @@ export default function ProductInfo() {
   return (
     <>
       <Layout>
-        <div className="Info_main bg-light dalju" style={{height:"900px"}}>
-          <div className="d-flex gap-5 flex-wrap m-4">
-            <div className="Info_img bg-dalju p-5" style={{ boxShadow: "0 0 10px rgba(0,0,0,0.1)", width: "380px" }}>
+        <div className="Info_main bg-light dalju m " style={{heihgt:"900px"}} >
+          <div className=" gap-5 flex-wrap d-flex judtify-content-center">
+            <div className="Info_img bg-dalju p-5 " style={{ boxShadow: "0 0 10px rgba(0,0,0,0.1)", width: "380px" }}>
               <img src={product.productImgUrl} alt="info_img" className="h-100 w-100" />
             </div>
             <div className="Info_img" style={{ width: "380px" }}>

@@ -103,7 +103,7 @@ export const FirebaseProvider = (props) => {
     }
   };
 
-  // Remove from Cart Functionality
+  //  Remove from Cart Functionality
   const removeFromCart = async (productId) => {
     if (user) {
       const cartRef = doc(database, `users/${user.uid}/cartItems/${productId}`);
