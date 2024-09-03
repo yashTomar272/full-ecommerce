@@ -1,10 +1,10 @@
+
 import {Link} from 'react-router-dom';
 import { useFirebase } from './Firebase';
 import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom"
-
 export default function ProductDetail(){
-const navigate= useNavigate();
+   const navigate=useNavigate();
   const firebase=useFirebase()
   const { getAllProductFunction, getAllProduct,deleteProduct  } = firebase;
   useEffect(() => {
@@ -15,10 +15,10 @@ const navigate= useNavigate();
     getAllProductFunction(); // Refresh the product list after deletion
   };
   return(
-    <><div className=" d-flex flex-column gap-3">
+    <><div className=" d-flex flex-column gap-3 table_main"  style={{overflowX:"scroll",scrollbarWidth:'none',cursor:"pointer"}}>
       <div className="d-flex justify-content-between align-item-center">
       <h4>All Product</h4>
-        <Link to={'/full-ecommerce/AddProductPage'}>
+        <Link to={'/AddProductPage'}>
           <button className="btn" style={{background:"#ffe5ec",border:"1px solid pink"}}>Add Product</button>
         </Link>
       </div>
