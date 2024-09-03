@@ -158,7 +158,7 @@ export default function CartPage() {
                       >
                         <div className="d-flex gap-2">
                           <img
-                            onClick={() => navigate(`/ProductInfo/${val.id}`)}
+                            onClick={() => navigate(`/full-ecommerce/ProductInfo/${val.id}`)}
                             src={productImgUrl}
                             alt="Product_img"
                             className="img-fluid"

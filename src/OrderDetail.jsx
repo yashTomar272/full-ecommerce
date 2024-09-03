@@ -44,7 +44,7 @@ export default function (){
                    <tr key={item.id}>
                        <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}>{ind+1}</td>
                        <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}>{id}</td>
-                       <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}><img src={productImgUrl} style={{width:"40px",aspectRatio:"1"}}/></td>
+                       <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}><img src={productImgUrl} alt="hello" style={{width:"40px",aspectRatio:"1"}}/></td>
                        <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}>{title}</td>
                        <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}>{category}</td>
                        <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}><FaIndianRupeeSign size={10}/>{price}</td>

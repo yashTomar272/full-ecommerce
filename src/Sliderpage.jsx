@@ -3,7 +3,6 @@ import Carousel from "react-bootstrap/Carousel";
 import img1 from "./img/fas1.png";
 import img2 from "./img/fas2.png";
 import img3 from "./img/fas3.png";
-import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Sliderpage() {
   
@@ -67,7 +66,6 @@ function SlideMain({ indx }) {
       image: "fas44.png",
     },
   ];
-  const navigate=useNavigate();
   return (
     <>
       <div className="Slider_main d-flex justify-content-between  w-100 position-relative d-flex p-3 " style={{ background:"radial-gradient(#fff,#ffd6d6)",height:"100vh"}}>

@@ -53,7 +53,7 @@ export default function CathogaryPage(){
 
                 return(
                   <div key={val.id} className="card position-relative" style={{width: "18rem",height:"410px",boxShadow:"0 0 10px rgba(0,0,0,0.1)"}}>
-                   <div className=" h-50 w-100 dalju p-1 "><img onClick={()=>navigate(`/ProductInfo/${val.id}`)} className="card-img-top h-100 w-100" src={productImgUrl} alt="Card image cap"  style={{objectFit:"contain"}}/></div>
+                   <div className=" h-50 w-100 dalju p-1 "><img onClick={()=>navigate(`/full-ecommerce/ProductInfo/${val.id}`)} className="card-img-top h-100 w-100" src={productImgUrl} alt="hello"  style={{objectFit:"contain"}}/></div>
                     <div className="card-body position-relative" style={{cursor:"pointer"}}>
                       <p className="card-title" style={{color:"gray"}}>Buy Smart</p>
                       <h6 className="card-text">{title}</h6>

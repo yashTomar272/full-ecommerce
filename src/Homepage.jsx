@@ -21,14 +21,14 @@
 // </>
 //   )
 // }
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import Cathogary from "./Cathogary";
 import Layout from "./Layout";
 import ProductCard from "./ProductCard";
 import Track from "./Track";
 import Testimonial from "./Testimonial";
 import Sliderpage from "./Sliderpage";
-import Loader from "./Loader";
+// import Loader from "./Loader";
 import { useNavigate } from "react-router-dom";
 import { useFirebase } from "./Firebase";
 

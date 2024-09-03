@@ -1,5 +1,5 @@
 
-import {XAxis,CartesianGrid,Tooltip,BarChart,Legend,Bar,PieChart,Pie,LineChart,YAxis,Line} from 'recharts'
+import {PieChart,Pie} from 'recharts'
  export default function AnalyticIII(){
    const data03 = [
      {

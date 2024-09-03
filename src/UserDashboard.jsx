@@ -3,7 +3,7 @@ import { useFirebase } from "./Firebase";
 import React, { useState, useEffect } from "react";
 
 import { MdCurrencyRupee } from "react-icons/md";
-import { NavItem } from 'react-bootstrap';
+// import { NavItem } from 'react-bootstrap';
 // import { useNavigate } from "react-router-dom";
 
 export default function UserDashboard(){
@@ -69,7 +69,7 @@ export default function UserDashboard(){
                         <div className='p-3 gap-5 d-flex  w-100 justify-content-around'>
 
                        <div className='d-flex  gap-2 '>
-                       <div  className=" p-2 dalju"style={{width:"100px",height:"100px",boxShadow:"0px 2px 4px rgba(0,0,0,0.25)",borderRadius:"7px"}}> <img src={productImgUrl} style={{width:"80px",height:"90px",borderRadius:"7px"}}/>
+                       <div  className=" p-2 dalju"style={{width:"100px",height:"100px",boxShadow:"0px 2px 4px rgba(0,0,0,0.25)",borderRadius:"7px"}}> <img src={productImgUrl} alt='hello' style={{width:"80px",height:"90px",borderRadius:"7px"}}/>
                        </div>
                          <div className='d-flex flex-column'><h6 className='mb-0'>{title}</h6>
                          <span style={{color:"#c9c5c5"}}> {category} </span>

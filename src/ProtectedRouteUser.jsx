@@ -1,6 +1,6 @@
 
 import { useFirebase } from "./Firebase";
-import { useNavigate,Navigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import { useEffect ,useState} from "react";
 
 const ProtectedRouteUser = ({children}) => 
@@ -15,7 +15,7 @@ const ProtectedRouteUser = ({children}) =>
             setIsAdmin(false);
           } else {
             setIsAdmin(true);
-            navigate("/LoginPage");
+            navigate("/full-ecommerce/LoginPage");
           }
         }, [firebase.userData, navigate]);
         if (isAdmin === null) {

@@ -1,4 +1,4 @@
-import {XAxis,CartesianGrid,Tooltip,BarChart,Legend,Bar,PieChart,Pie,LineChart,YAxis,Line} from 'recharts'
+import {XAxis,Tooltip,Legend,LineChart,YAxis,Line} from 'recharts'
 
  export default function AnalyticII(){
    const data02 = [

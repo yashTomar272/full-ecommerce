@@ -172,6 +172,7 @@ export default function Loginpage() {
               Secure and seamless ligin experience for Buy Smart users...
             </p>
             <img
+            alt="hello"
               src="login1.png"
               className="img-fluid position-absolute"
               style={{ bottom: "0px" }}

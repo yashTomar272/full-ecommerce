@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import {  addDoc, collection } from "firebase/firestore";
 import {useFirebase} from './Firebase'
  export default function AddProductPage(){
@@ -47,7 +47,7 @@ import {useFirebase} from './Firebase'
         const productRef = collection(firebase.database, 'products');
         await addDoc(productRef, product)
         toast.success("Add product successfully!");
-        navigate('/AdminDashboard')
+        navigate('/full-ecommerce/AdminDashboard')
         // setLoading(false)
     }catch (error) {
       console.error("Error adding document: ", error);

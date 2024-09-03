@@ -26,7 +26,7 @@ export default function Navbar() {
 
   const handleToggleSection = (section) => {
     if (section === "cart") {
-      navigate("/CartPage"); // Navigate to CartPage on cart icon click
+      navigate("/full-ecommerce/CartPage"); // Navigate to CartPage on cart icon click
     }
     setActiveSection((prevSection) => (prevSection === section ? "" : section));
   };
@@ -164,6 +164,7 @@ export default function Navbar() {
                             >
                               <img
                                 src={val.productImgUrl}
+                                alt="hello"
                                 style={{ width: "43px", aspectRatio: "1" }}
                               />
                               <h6>{val.category}</h6>
@@ -177,6 +178,7 @@ export default function Navbar() {
                           <img
                             src="https://www.kpriet.ac.in/asset/frontend/images/nodata.png"
                             style={{ width: "170px", height: "80px" }}
+                            alt="hello"
                           />
                         </span>
                       </>

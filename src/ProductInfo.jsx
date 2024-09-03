@@ -10,7 +10,7 @@ import { getDocs, collection, doc, getDoc } from "firebase/firestore";
 
 export default function ProductInfo() {
   const firebase = useFirebase();
-  const { addToCart, removeFromCart, getProductById, user, database } = firebase;
+  const { addToCart, removeFromCart,user, database } = firebase;
 
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);

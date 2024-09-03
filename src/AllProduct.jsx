@@ -53,11 +53,11 @@ export default function AllProduct() {
               >
                 <div className="dalju p-1 w-100 h-50">
                   <img
-                    onClick={() => navigate(`/ProductInfo/${val.id}`)}
+                    onClick={() => navigate(`/full-ecommerce/ProductInfo/${val.id}`)}
                     style={{ objectFit: "contain" }}
                     className="card-img-top h-100 w-100"
                     src={productImgUrl}
-                    alt="Card image cap"
+                    alt="hello"
                   />
                 </div>
                 <div

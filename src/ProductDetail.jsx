@@ -44,7 +44,7 @@ export default function ProductDetail(){
           <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6"}}>{product.date}</td>
           <td className="p-sm-2  p-1" style={{border:"1px solid #ffd6d6",color:"Lightgreen"}} onClick={() => {
              
-              navigate(`/UpdateProductPage/${product.id}`);
+              navigate(`/full-ecommerce/UpdateProductPage/${product.id}`);
             }}>Edit</td>
            <td className="p-sm-2  p-1" style={{ border: "1px solid #ffd6d6", color: "red" }} onClick={() => handleDelete(product.id)}>Delete</td>
         </tr>
